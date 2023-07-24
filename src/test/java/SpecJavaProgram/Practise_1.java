@@ -7,5 +7,9 @@ public class Practise_1 {
 		for (int i = 0; i < 5; i++) {
 			System.out.println("name");
 		}
+		
+		for (String string : args) {
+			System.out.println("i am");
+		}
 	}
 }
