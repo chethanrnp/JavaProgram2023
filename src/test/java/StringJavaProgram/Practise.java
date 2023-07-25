@@ -11,14 +11,19 @@ public class Practise {
 
 	public static void main(String[] args) {
 
-		String s = "Hi hello Welocme Bye";
-		String[] a = s.split(" ");
-		for (int i = 0; i < a.length; i++) {
-			String rev = a[i];
-			for (int j = rev.length() - 1; j >= 0; j--) {
-				System.out.print(rev.charAt(j));
+		String s = "java is easy java is easy";
+		int half = s.length() / 2;
+
+		String upper = "";
+		String lower = "";
+		for (int i = 0; i < s.length(); i++) {
+			if (i < half) {
+				upper = upper + Character.toUpperCase(s.charAt(i));
+			} else {
+				lower = lower + Character.toLowerCase(s.charAt(i));
 			}
-			System.out.print(" ");
 		}
+		System.out.println(upper + lower);
+		System.out.println(lower.trim());
 	}
 }

@@ -4,22 +4,22 @@ import java.util.Arrays;
 
 public class FminAndSminWithBubble {
 
-	 public static void main(String[] args) {
-		 int a[]= {20,30,10,50,40};
-			
-			int temp;
-			for (int i = 0; i < a.length; i++) {
-			for (int j = i+1; j < a.length; j++) {
-				if(a[i]>a[j]) {
-					temp=a[i];
-					a[i]=a[j];
-					a[j]=temp;
+	public static void main(String[] args) {
+		int a[] = { 20, 30, 10, 50, 40 };
+
+		int temp;
+		for (int i = 0; i < a.length; i++) {
+			for (int j = i + 1; j < a.length; j++) {
+				if (a[i] > a[j]) {
+					temp = a[i];
+					a[i] = a[j];
+					a[j] = temp;
 				}
 			}
-			}
-			
-			System.out.println(Arrays.toString(a));
-			System.out.println("Fmin="+a[0]+",Smin="+a[1]);
-		
+		}
+
+		System.out.println(Arrays.toString(a));
+		System.out.println("Fmin=" + a[0] + ",Smin=" + a[1]);
+
 	}
 }

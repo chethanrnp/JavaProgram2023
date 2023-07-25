@@ -5,7 +5,7 @@ import java.util.LinkedHashSet;
 public class PrintOvelWithRepeatedIndex {
 
 	 public static void main(String[] args) {
-		String s="india";
+			String s = "india";
 		
 		 LinkedHashSet<Character> set=new LinkedHashSet<Character>();
 		for (int i = 0; i < s.length(); i++) {

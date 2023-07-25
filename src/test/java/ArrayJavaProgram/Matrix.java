@@ -6,7 +6,7 @@ public class Matrix {
 
 	public static void main(String[] args) {
 		int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
-
+		// find min number and then find maximum number in that coloumn
 		int min = a[0][0];
 		int col = 0;
 		for (int i = 0; i < 3; i++) {

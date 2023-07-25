@@ -14,26 +14,18 @@ import org.testng.annotations.Test;
 public class Practise {
 
 	public static void main(String[] args) {
-		int[][] a = { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 } };
+		String s = "india";
 
-		int max = a[0][0];
-		int col = 0;
-		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a.length; j++) {
-				if (max < a[i][j]) {
-					max = a[i][j];
-					col = j;
-				}
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == 'a' || s.charAt(i) == 'e' || s.charAt(i) == 'i' || s.charAt(i) == 'o'
+					|| s.charAt(i) == 'u') {
+				count++;
+			}
+			if (count > 1) {
+				System.out.println(s.charAt(i));
 			}
 		}
-		System.out.println(max);
-		System.out.println(col);
-		int min = a[0][col];
-		for (int i = 0; i < a.length; i++) {
-			if (min > a[i][col]) {
-				min = a[i][col];
-			}
-		}
-		System.out.println(min);
+		System.out.println(count);
 	}
 }
